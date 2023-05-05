@@ -1,5 +1,96 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-img {
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  top: -700px;
+  font-weight: 200;
+}
+
+header p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 24px;
+}
+
+.recipe-img,
+.cooking-img {
+  width: 500px;
+}
+
+header div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+hr {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe {
+  text-align: left;
+}
+
+h2 {
+  font-weight: lighter;
+  padding-bottom: 25px;
+  margin-top: 50px;
+}
+
+.recipe-ol-container,
+.directions-container {
+  margin-left: 350px;
+}
+
+.recipe ol {
+  list-style-type: "-";
+}
+
+.cooking-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.directions-container {
+  margin-bottom: 50px;
+}
+
+.directions-list {
+  width: 80%;
+  align-items: justify;
+}
+
+/* adding parentheses with css counters */
+ol {
+  counter-reset: list;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list, number) ") ";
+  counter-increment: list;
 }
