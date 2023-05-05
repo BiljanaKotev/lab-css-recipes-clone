@@ -8,11 +8,40 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+header p,
+hr,
+header {
+  margin: 0 auto;
+}
+
+header p,
+.directions-list {
+  width: 80%;
+  text-align: justify;
+}
+
+.recipe-img,
+.cooking-img {
+  width: 500px;
+}
+
+header-div,
+h2,
+.cooking-container {
+  margin-top: 50px;
+}
+
+header div,
+header,
+h1,
+.cooking-container {
+  text-align: center;
+}
+
+/* header */
 header {
   width: 1200px;
   max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .header-img {
@@ -23,32 +52,19 @@ h1 {
   position: relative;
   color: white;
   font-size: 60px;
-  text-align: center;
   top: -700px;
   font-weight: 200;
 }
 
 header p {
-  width: 80%;
-  margin: 0 auto;
-  text-align: justify;
   font-size: 24px;
-}
-
-.recipe-img,
-.cooking-img {
-  width: 500px;
-}
-
-header div {
-  text-align: center;
-  margin-top: 50px;
 }
 
 hr {
   width: 1200px;
-  margin: 0 auto;
 }
+
+/* recipe section */
 
 .recipe {
   text-align: left;
@@ -57,7 +73,6 @@ hr {
 h2 {
   font-weight: lighter;
   padding-bottom: 25px;
-  margin-top: 50px;
 }
 
 .recipe-ol-container,
@@ -69,18 +84,10 @@ h2 {
   list-style-type: "-";
 }
 
-.cooking-container {
-  text-align: center;
-  margin-top: 50px;
-}
+/* directions section */
 
 .directions-container {
   margin-bottom: 50px;
-}
-
-.directions-list {
-  width: 80%;
-  align-items: justify;
 }
 
 /* adding parentheses with css counters */
