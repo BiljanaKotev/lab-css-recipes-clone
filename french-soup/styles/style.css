@@ -1,9 +1,104 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+/* Some necessary adjustments */
+h1,
+body,
+html,
+main {
   margin: 0;
 }
 /*Import the font and set the default size*/
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: -800px;
+  font-size: 130px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.header-img-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: calc(100% * (300 / 400));
+  top: -375px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relative-section {
+  position: relative;
+  top: -350px;
+}
+
+.info {
+  font-size: 36px;
+  color: grey;
+}
+
+.info p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 56px;
+  padding-bottom: 50px;
+}
+
+/* .info div {
+  text-align: center;
+} */
+
+hr {
+  width: 1200px;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* ingredients section */
+
+.ingredients-container,
+.directions-container {
+  margin-left: 152px;
+}
+
+.ingredients-section ul {
+  list-style-type: "- ";
+}
+
+.ingredients-section ul,
+.directions-section ol {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.center-img {
+  text-align: center;
+}
+
+ol {
+  counter-reset: list;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list, number) ") ";
+  counter-increment: list;
 }
